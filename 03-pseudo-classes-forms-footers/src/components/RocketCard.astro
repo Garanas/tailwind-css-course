@@ -1,0 +1,17 @@
+---
+interface Props {
+    image: string;
+    header: string;
+    smallScreenText: string;
+    largeScreenText: string;
+}
+
+const {image, header, smallScreenText, largeScreenText} = Astro.props;
+---
+
+<li class="flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
+    <img src={image} alt="Explorer" class="w-1/2 mb-6">
+    <h3 class="text-3xl text-center text-slate-900 dark:text-white">{header}</h3>
+    <p class="hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400">{largeScreenText}</p>
+    <p class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">{smallScreenText}</p>
+</li>
