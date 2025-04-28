@@ -58,6 +58,10 @@ I got around this by using spans to represent the quotes. The output matches the
 </figure>
 ```
 
+### Tailwind configuration
+
+In the most recent version of tailwind the configuration is not available by default. The Tailwind team introduced a [css-first configuration](https://tailwindcss.com/blog/tailwindcss-v4#css-first-configuration). You can still [introduce the standard configuration file](https://github.com/tailwindlabs/tailwindcss/discussions/17168#discussioncomment-12734594). A lot of novice users that use tutorials using v3 or earlier are caught off guard by this, up to the point that there's [YouTube videos](https://www.youtube.com/watch?v=bupetqS1SMU) by other authors to inform people about it!
+
 ## Feedback on the course
 
 These are some things that I would like to see different in this course. This section is by all means my opinion and as with any other opinion - it's fine to disagree. Just don't be an asshole about it.

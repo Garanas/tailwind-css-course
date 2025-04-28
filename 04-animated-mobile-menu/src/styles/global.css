@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+
+@theme {
+    --animate-open-menu: open-menu 0.4s ease-in-out forwards;
+
+    --breakpoint-widescreen: min-aspect-ratio: 3 / 2;
+
+    @keyframes open-menu {
+        0% {
+            transform: scaleY(0)
+        }
+        80% {
+            transform: scaleY(1.2)
+        }
+        100% {
+            transform: scaleY(1.0)
+        }
+    }
+}
+
+@layer utilities {
+    .toggle-btn {
+        @apply [&>span::before]:translate-y-0 [&>span::before]:rotate-45 [&>span::after]:translate-y-0 [&>span::after]:-rotate-45 [&>span]:bg-transparent [&>span]:rotate-[720deg]
+    }
+}
