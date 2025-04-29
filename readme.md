@@ -2,6 +2,8 @@
 
 This repository is my personal interpretation of a [course](https://www.youtube.com/watch?v=lCxcTsOHrjo) about the use of [Tailwind](https://tailwindcss.com/) by [Dave Gray](https://yesdavidgray.com/). See also the [official repository](https://github.com/gitdagray/tailwind-css-course). I deviate from the course by using [Astro](https://astro.build/).
 
+![Preview of the website](./.github/preview.webp)
+
 ## Encountered issues
 
 While going through the course I encountered some issues. They are described here. These are not necessarily issues with the (content of) the course. They are likely issues because of my lack of understanding (of Astro).
