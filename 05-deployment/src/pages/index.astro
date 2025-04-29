@@ -24,7 +24,7 @@ import Quote from "../components/Quote.astro"
                     Think Acme Rockets.
                 </p>
             </article>
-            <img class="w-1/2" src="/rocketdab.png" alt="Rocket Dab">
+            <img class="w-1/2" src="{import.meta.env.BASE_URL}/rocketdab.png" alt="Rocket Dab">
 
         </section>
 
@@ -33,11 +33,11 @@ import Quote from "../components/Quote.astro"
         <section id="rockets" class="p-6 my-12 scroll-mt-20">
             <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">Our rockets</h2>
             <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
-                <RocketCard header="Explorer" image="/rocketman.png" largeScreenText="$"
+                <RocketCard header="Explorer" image="{import.meta.env.BASE_URL}/rocketman.png" largeScreenText="$"
                             smallScreenText="Affordable exploration"/>
-                <RocketCard header="Adventurer" image="/rocketride.png" largeScreenText="$$"
+                <RocketCard header="Adventurer" image="{import.meta.env.BASE_URL}/rocketride.png" largeScreenText="$$"
                             smallScreenText="Best Selling Rocket!"/>
-                <RocketCard header="Infinity" image="/rocketlaunch.png" largeScreenText="$$$"
+                <RocketCard header="Infinity" image="{import.meta.env.BASE_URL}/rocketlaunch.png" largeScreenText="$$$"
                             smallScreenText="Luxury Starship"/>
             </ul>
         </section>
