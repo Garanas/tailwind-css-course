@@ -1,6 +1,6 @@
 # Tailwind Course
 
-This repository is my personal interpretation of a [course](https://www.youtube.com/watch?v=lCxcTsOHrjo) about the use of [Tailwind](https://tailwindcss.com/) by [Dave Gray](https://yesdavidgray.com/). I deviate from the course by using [Astro](https://astro.build/).
+This repository is my personal interpretation of a [course](https://www.youtube.com/watch?v=lCxcTsOHrjo) about the use of [Tailwind](https://tailwindcss.com/) by [Dave Gray](https://yesdavidgray.com/). See also the [official repository](https://github.com/gitdagray/tailwind-css-course). I deviate from the course by using [Astro](https://astro.build/).
 
 ## Encountered issues
 
@@ -8,7 +8,7 @@ While going through the course I encountered some issues. They are described her
 
 ### Defining content
 
-The use of `before:content-['\201C']` appears to break the build pipeline of Astro. The moment I use this the component is no longer rendered properly - parts of the HTML of the component appear to be missing in the output. 
+The use of `before:content-['\201C']` appears to break the build pipeline of Astro. I raised an [issue](https://github.com/withastro/astro/issues/13718) about it. The moment I use this the component is no longer rendered properly - parts of the HTML of the component appear to be missing in the output. 
 
 The HTML in the component:
 
@@ -62,9 +62,11 @@ I got around this by using spans to represent the quotes. The output matches the
 
 In the most recent version of tailwind the configuration is not available by default. The Tailwind team introduced a [css-first configuration](https://tailwindcss.com/blog/tailwindcss-v4#css-first-configuration). You can still [introduce the standard configuration file](https://github.com/tailwindlabs/tailwindcss/discussions/17168#discussioncomment-12734594). A lot of novice users that use tutorials using v3 or earlier are caught off guard by this, up to the point that there's [YouTube videos](https://www.youtube.com/watch?v=bupetqS1SMU) by other authors to inform people about it!
 
+For more information about all the changes, see also the [official blogpost](https://tailwindcss.com/blog/tailwindcss-v4).
+
 ## Feedback on the course
 
-These are some things that I would like to see different in this course. This section is by all means my opinion and as with any other opinion - it's fine to disagree. Just don't be an asshole about it.
+The course is fine. I do feel there are some things that I think would make the course much better. This section is by all means my opinion and as with any other opinion - it's fine to disagree. Just don't be an asshole about it.
 
 ### Type after me
 
@@ -132,3 +134,5 @@ It's visually the same. But it's much easier to reason about. I'm not sure wheth
 - [Tailwind CSS Course by Dave Gray](https://www.youtube.com/watch?v=lCxcTsOHrjo)
 - [Emoji library ](https://emojipedia.org)
 - [Symbol Codes (Symbl.cc)](https://symbl.cc/)
+
+For more useful resources, see also the [official repository](https://github.com/gitdagray/tailwind-css-course).
